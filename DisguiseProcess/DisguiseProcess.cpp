@@ -71,6 +71,7 @@ BOOL DisguiseProcess(DWORD dwProcessId, wchar_t* lpwszPath, wchar_t* lpwszCmd) {
     ::WriteProcessMemory(hProcess, &Param.ImagePathName.Length, &usPathLen, sizeof(usPathLen), NULL);
     return TRUE;
 }
+
 int main() {
     // You can use either window name or a given process ID.
     std::cout << "Input process ID." << std::endl;
